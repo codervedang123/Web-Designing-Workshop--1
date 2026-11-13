@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 11: Accessibility</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        /* Make the skip link visible on screen */
+        .skip-link {
+            display: inline-block;
+            color: #0000EE;
+            text-decoration: underline;
+            margin-bottom: 5px;
+        }
+
+        nav {
+            margin-bottom: 15px;
+        }
+
+        nav a {
+            margin-right: 15px;
+            color: #0000EE;
+            text-decoration: underline;
+        }
+
+        h1 {
+            font-size: 32px;
+            font-weight: bold;
+            margin-top: 10px;
+            margin-bottom: 20px;
+        }
+
+        .content-box {
+            margin-bottom: 15px;
+        }
+
+        .content-box img {
+            vertical-align: middle;
+            margin-right: 5px;
+            border: 1px solid #ccc;
+            width: 320px;
+            height: 25px;
+        }
+
+
+
+        .content-box button {
+            background-color: #efefef;
+            border: 1px solid #767676;
+            padding: 2px 8px;
+            cursor: pointer;
+        }
+
+        .search-container label {
+            margin-right: 5px;
+        }
+
+        .search-container input {
+            width: 300px;
+            padding: 3px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <a href="#main-content" class="skip-link">Skip to main content</a><br>
+
+    <nav aria-label="Main Navigation">
+        <a href="#home">Home</a>
+        <a href="#help">Help</a>
+    </nav>
+
+    <main id="main-content">
+        <h1>Accessible Page</h1>
+
+        <div class="content-box">
+            <img src="placeholder.jpg" aria-label="Placeholder graphic">
+            <button aria-label="Close">X</button>
+        </div>
+
+        <div class="search-container">
+            <label for="search">Search:</label>
+            <input type="text" id="search" name="search">
+        </div>
+    </main>
+
+</body>
+
+</html>
