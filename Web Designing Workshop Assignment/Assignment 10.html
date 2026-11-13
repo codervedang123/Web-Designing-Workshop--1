@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment 10: Multimedia</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h3 {
+            margin-bottom: 5px;
+        }
+        .img-container {
+            width: 200px;
+            height: 200px;
+            border: 1px solid #ccc;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .img-container img {
+            width: 100%;
+            height: auto;
+        }
+        iframe {
+            width: 400px;
+            height: 250px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <h3>Image</h3>
+    <div class="img-container">
+        <p style="margin: 0 0 5px 0;">College campus</p>
+        <img src="campus.jpg" >
+    </div>
+
+    <h3>Video</h3>
+    <video controls width="300">
+        <source src="video.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <h3>Audio</h3>
+    <audio controls>
+        <source src="audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <h3>YouTube</h3>
+    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" allowfullscreen></iframe>
+
+</body>
+</html>
